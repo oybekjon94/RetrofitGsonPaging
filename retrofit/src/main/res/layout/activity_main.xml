@@ -11,5 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="1dp"
+        app:layout_constraintBottom_toTopOf="@id/progress_horizontal"
         tools:layout_editor_absoluteY="1dp" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/progress_horizontal"
+        android:indeterminate="true"
+        android:layout_height="wrap_content"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
